@@ -1,4 +1,4 @@
-import * as ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import './scss/index.scss'
 import { MainComponent } from './components/MainComponent'
 import { AnotherComponent } from './components/AnotherComponent'
@@ -12,4 +12,4 @@ const PlayGround = () => {
 	)
 }
 
-ReactDOM.render(<PlayGround />, document.getElementById('root'))
+createRoot(document.getElementById('root')!).render(<PlayGround />)
