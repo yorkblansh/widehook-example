@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom'
+import * as ReactDOM from 'react-dom'
 import './scss/index.scss'
 import { MainComponent } from './components/MainComponent'
 import { AnotherComponent } from './components/AnotherComponent'
