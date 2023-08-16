@@ -1,14 +1,16 @@
-import * as React from 'react';
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import { StrictMode } from "react";
+import ReactDOM from "react-dom";
+import "./scss/index.scss";
+import { MainComponent } from "./components/MainComponent";
+import { AnotherComponent } from "./components/AnotherComponent";
 
-import App from './App';
+const PlayGround = () => {
+  return (
+    <div className="playground">
+      <MainComponent />
+      <AnotherComponent />
+    </div>
+  );
+};
 
-const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+ReactDOM.render(<PlayGround />, document.getElementById("root"));
