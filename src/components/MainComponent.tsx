@@ -1,12 +1,12 @@
-import { useWideMessage } from 'src/shared/hooks/useWideMessage'
+import { useWideMessage } from '../shared/hooks/useWideMessage';
 
 export const MainComponent = () => {
-	const [message, setMessage] = useWideMessage()
+  const [message, setMessage] = useWideMessage();
 
-	return (
-		<section>
-			Main Component
-			<button onClick={() => setMessage('One Value')}>{message}</button>
-		</section>
-	)
-}
+  return (
+    <section>
+      Main Component
+      <button onClick={() => setMessage('One Value')}>{message}</button>
+    </section>
+  );
+};
