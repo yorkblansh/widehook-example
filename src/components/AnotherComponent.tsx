@@ -1,7 +1,12 @@
+import { useState } from 'react'
 import { useWideMessage } from '../shared/hooks/useWideMessage'
 
 export const AnotherComponent = () => {
+	const [a, b] = useState('')
+
 	const [message, setMessage] = useWideMessage()
+
+	console.log({ a })
 
 	return (
 		<section>
