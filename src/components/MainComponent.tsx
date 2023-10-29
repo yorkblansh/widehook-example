@@ -1,4 +1,4 @@
-import { useWideMessage } from '../shared/hooks/useWideMessage'
+import { useWideMessage } from '../hooks/useWideMessage'
 
 export const MainComponent = () => {
 	const [message, setMessage] = useWideMessage()

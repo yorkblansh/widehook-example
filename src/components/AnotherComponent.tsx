@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useWideMessage } from '../shared/hooks/useWideMessage'
+import { useWideMessage } from '../hooks/useWideMessage'
 
 export const AnotherComponent = () => {
 	const [a, b] = useState('')
